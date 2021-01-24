@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Academy: Нёрдс</title>
+</head>
+<body>
+    <header>
+        <nav>
+          <a href="index.html">
+            <img src="" alt="Логотип Нёрдс">
+          </a>
+          <ul>
+            <li><a href="blank.html">Студия</a></li>
+            <li><a href="blank.html">Клиенты</a></li>
+            <li><a>Магазин</a></li>
+            <li><a href="blank.html">Контакты</a></li>
+          </ul>
+          <a href="blank.html">Корзина</a>
+        </nav>
+  
+        <h1>Магазин готовых товаров</h1>
+  
+      </header>
+
+      <main>
+          <h2>Стоимость</h2>
+
+          <p>
+              <input type="range" min="0" max="15000" step="1" value="10000">
+          </p>
+          <p>От <span>0</span> До <span>15000</span></p>
+
+          <section>
+              <h2>Фильтр товаров</h2>
+              <form action="https://echo.htmlacademy.ru/" method="get">
+                  <fieldset>
+                      <legend>Сетка:</legend>
+                      <ul>
+                          <li>
+                              <input type="radio" name="grid" value="adaptive"
+                              id="filter-adaptive" checked>
+                              <label for="filter-adaptive">Адаптивная</label>
+                          </li>
+                          <li>
+                            <input type="radio" name="grid" value="fixed"
+                            id="filter-fixed">
+                            <label for="filter-fixed">Фиксированная</label>
+                          </li>
+                          <li>
+                            <input type="radio" name="grid" value="rubber"
+                            id="filter-rubber">
+                            <label for="filter-rubber">Резиновая</label>
+                          </li>
+                      </ul>
+                  </fieldset>
+                  <fieldset>
+                      <legend>Особенности:</legend>
+                      <ul>
+                          <li>
+                              <input type="checkbox" name="slider" 
+                              id="filter-slider" checked>
+                              <label for="filter-slider">Слайдер</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" name="block-of-advantages" 
+                            id="filter-block-of-advantages">
+                            <label for="filter-block-of-advantages">Блок преимуществ</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" name="news" 
+                            id="filter-news" checked>
+                            <label for="filter-news">Новости</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" name="gallery" 
+                            id="filter-gallery">
+                            <label for="filter-gallery">Галерея</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" name="basket" 
+                            id="filter-basket">
+                            <label for="filter-basket">Корзина</label>
+                          </li>
+                      </ul>
+                  </fieldset>
+                  <button type="submit">Показать</button>
+              </form>
+          </section>
+
+          <section>
+              <h2>Сортировать</h2>
+              <ul>
+                  <li>
+                      <a href="#">По цене</a>
+                  </li>
+                  <li>
+                      <a>По типу</a>
+                  </li>
+                  <li>
+                      <a>По названию</a>
+                  </li>
+              </ul>
+              <button type="button">&#11015;</button>
+              <button type="button" disabled>&#11014;</button>
+              <!-- тут видимо нужен пагинатор -->
+              <ul>
+                  <li>
+                    <a href="blank.html">
+                        <div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                        </div>
+                        <p>
+                            <img src="img/" alt="Сайт">
+                        </p>
+                    </a>
+                    <p>
+                    <span>Sedona</span>
+                        Информационный сайт<br>
+                         для туристов
+                        <button type="button">9 900 &#8381;</button>
+                    </p>
+                  </li>
+                  <li>
+                    <a href="blank.html">
+                        <div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                        </div>
+                        <p>
+                            <img src="img/" alt="Сайт">
+                        </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="blank.html">
+                        <div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                        </div>
+                        <p>
+                            <img src="img/" alt="Сайт">
+                        </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="blank.html">
+                        <div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                        </div>
+                        <p>
+                            <img src="img/" alt="Сайт">
+                        </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="blank.html">
+                        <div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                        </div>
+                        <p>
+                            <img src="img/" alt="Сайт">
+                        </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="blank.html">
+                        <div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                        </div>
+                        <p>
+                            <img src="img/" alt="Сайт">
+                        </p>
+                    </a>
+                  </li>
+              </ul>
+          </section>
+      </main>
+
+      <footer>
+        <section>
+          <h2>Как до нас добраться</h2>
+            <section>
+                <h3>Контактная информация</h3>
+                <p>
+                  Nerds design studio<br>
+                  191186, Санкт-Петербург,<br>
+                  ул. Б. Конюшенная, д. 19/8<br>
+                
+                    <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+                </p> 
+                <a href="blank.html">Напишите нам</a>
+            </section>
+            <figure>
+              <img src="" alt="">
+            </figure>
+        </section>
+  
+        <section>
+          <h2>Давайте дружить</h2>
+          <ul>
+            <li>
+              <a href="#">Вконтакте</a>
+            </li>
+            <li>
+              <a href="#">Фейсбук</a>
+            </li>
+            <li>
+              <a href="#">Инстаграм</a>
+            </li>
+          </ul>
+        </section>
+        <span>Давайте дружить, это выгодно!</span>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </footer>
+
+</body>
+</html>
