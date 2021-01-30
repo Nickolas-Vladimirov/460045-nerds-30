@@ -1,252 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>HTML Academy: Нёрдс</title>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Нёрдс</title>
 </head>
+
 <body>
-    <header>
-        <nav>
-          <a href="index.html">
-            <img src="img/nerds-logo.png" width="159,87" height="65,02" alt="Логотип Нёрдс">
+  <header>
+    <nav>
+      <a href="index.html">
+        <img src="img/nerds-logo.png" width="159,87" height="65,02" alt="Логотип Нёрдс">
+      </a>
+      <ul>
+        <li><a href="blank.html">Студия</a></li>
+        <li><a href="blank.html">Клиенты</a></li>
+        <li><a>Магазин</a></li>
+        <li><a href="blank.html">Контакты</a></li>
+      </ul>
+      <a href="blank.html">
+        <img src="img/cart-icon.svg" width="15" height="15" alt="">
+        Корзина</a>
+    </nav>
+
+    <h1>Магазин готовых товаров</h1>
+
+  </header>
+
+  <main>
+    <h2>Стоимость</h2>
+    <p>
+      <input type="range" min="0" max="15000" step="1" value="10000">
+    </p>
+    <p>От <span>0</span> До <span>15000</span></p>
+
+    <section>
+      <h2>Фильтр товаров</h2>
+      <form action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset>
+          <legend>Сетка:</legend>
+          <ul>
+            <li>
+              <input type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
+              <label for="filter-adaptive">Адаптивная</label>
+            </li>
+            <li>
+              <input type="radio" name="grid" value="fixed" id="filter-fixed">
+              <label for="filter-fixed">Фиксированная</label>
+            </li>
+            <li>
+              <input type="radio" name="grid" value="rubber" id="filter-rubber">
+              <label for="filter-rubber">Резиновая</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Особенности:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="slider" id="filter-slider" checked>
+              <label for="filter-slider">Слайдер</label>
+            </li>
+            <li>
+              <input type="checkbox" name="block-of-advantages" id="filter-block-of-advantages">
+              <label for="filter-block-of-advantages">Блок преимуществ</label>
+            </li>
+            <li>
+              <input type="checkbox" name="news" id="filter-news" checked>
+              <label for="filter-news">Новости</label>
+            </li>
+            <li>
+              <input type="checkbox" name="gallery" id="filter-gallery">
+              <label for="filter-gallery">Галерея</label>
+            </li>
+            <li>
+              <input type="checkbox" name="basket" id="filter-basket">
+              <label for="filter-basket">Корзина</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit">Показать</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Сортировать</h2>
+      <ul>
+        <li>
+          <a href="#">По цене</a>
+        </li>
+        <li>
+          <a>По типу</a>
+        </li>
+        <li>
+          <a>По названию</a>
+        </li>
+      </ul>
+      <button type="button">&#11015;</button>
+      <button type="button" disabled>&#11014;</button>
+      <!-- тут видимо нужен пагинатор -->
+      <ul>
+        <li>
+          <div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <img src="img/templates/img-sedona 1.jpg" width="359" height="578" alt="Сайт">
+
+          <h3><a href="blank.html">Sedona</a></h3>
+
+          <p>Информационный сайт для туристов</p>
+
+          <p>9 900 &#8381;</p>
+        </li>
+        <li>
+          <div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <img src="img/templates/img-pink 1.jpg" width="359" height="578" alt="Сайт">
+
+          <h3><a href="blank.html">Sedona</a></h3>
+
+          <p>Информационный сайт для туристов</p>
+
+          <p>9 900 &#8381;</p>
+        </li>
+        <li>
+          <div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <img src="img/templates/img-barbershop 1.jpg" width="359" height="578" alt="Сайт">
+
+          <h3><a href="blank.html">Sedona</a></h3>
+
+          <p>Информационный сайтдля туристов</p>
+
+          <p>9 900 &#8381;</p>
+        </li>
+        <li>
+          <div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <img src="img/templates/img-mishka 1.jpg" width="359" height="578" alt="Сайт">
+
+          <h3><a href="blank.html">Sedona</a></h3>
+
+          <p>Информационный сайтдля туристов</p>
+
+          <p>9 900 &#8381;</p>
+        </li>
+        <li>
+          <div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <img src="img/templates/img-aplus 1.jpg" width="359" height="578" alt="Сайт">
+
+          <h3><a href="blank.html">Sedona</a></h3>
+
+          <p>Информационный сайтдля туристов</p>
+
+          <p>9 900 &#8381;</p>
+        </li>
+        <li>
+          <div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <img src="img/templates/img-kvast 1.jpg" width="359" height="578" alt="Сайт">
+
+          <h3><a href="blank.html">Sedona</a></h3>
+
+          <p>Информационный сайтдля туристов</p>
+
+          <p>9 900 &#8381;</p>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a>1</a>
+        </li>
+        <li>
+          <a href="#">2</a>
+        </li>
+        <li>
+          <a href="#">3</a>
+        </li>
+      </ul>
+      <button type="button">Следующая</button>
+    </section>
+  </main>
+
+  <footer>
+    <section>
+      <h2>Как до нас добраться</h2>
+      <address>
+        <h3>Контактная информация</h3>
+        <p>
+          Nerds design studio<br>
+          191186, Санкт-Петербург,<br>
+          ул. Б. Конюшенная, д. 19/8<br>
+
+          <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+        </p>
+        <a href="blank.html">Напишите нам</a>
+      </address>
+      <div>
+        <img src="img/map-marker 1.png" width="231" height="190" alt="Маркер на карте">
+      </div>
+    </section>
+
+    <section>
+      <ul>
+        <li>
+          <a href="#">
+            <img src="img/icons/vk-icon.svg" width="26.01" height="15" alt="Логотип Вконтакте">
           </a>
-          <ul>
-            <li><a href="blank.html">Студия</a></li>
-            <li><a href="blank.html">Клиенты</a></li>
-            <li><a>Магазин</a></li>
-            <li><a href="blank.html">Контакты</a></li>
-          </ul>
-          <a href="blank.html">
-            <img src="img/cart-icon.svg" width="15" height="15" alt="">
-            Корзина</a>
-        </nav>
-  
-        <h1>Магазин готовых товаров</h1>
-  
-      </header>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/icons/fb-icon.svg" width="12" height="22" alt="Логотип Facebook">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/icons/insta-icon.svg" width="21" height="21" alt="Логотип Instagram">
+          </a>
+        </li>
+      </ul>
+    </section>
+    <h2>Давайте дружить, это выгодно!</h2>
+    <p>Скидка 10% для друзей из социальных сетей.</p>
+  </footer>
 
-      <main>
-          <h2>Стоимость</h2>
-          <p>
-              <input type="range" min="0" max="15000" step="1" value="10000">
-          </p>
-          <p>От <span>0</span> До <span>15000</span></p>
+</body>
 
-          <section>
-              <h2>Фильтр товаров</h2>
-              <form action="https://echo.htmlacademy.ru/" method="get">
-                  <fieldset>
-                      <legend>Сетка:</legend>
-                      <ul>
-                          <li>
-                              <input type="radio" name="grid" value="adaptive"
-                              id="filter-adaptive" checked>
-                              <label for="filter-adaptive">Адаптивная</label>
-                          </li>
-                          <li>
-                            <input type="radio" name="grid" value="fixed"
-                            id="filter-fixed">
-                            <label for="filter-fixed">Фиксированная</label>
-                          </li>
-                          <li>
-                            <input type="radio" name="grid" value="rubber"
-                            id="filter-rubber">
-                            <label for="filter-rubber">Резиновая</label>
-                          </li>
-                      </ul>
-                  </fieldset>
-                  <fieldset>
-                      <legend>Особенности:</legend>
-                      <ul>
-                          <li>
-                              <input type="checkbox" name="slider" 
-                              id="filter-slider" checked>
-                              <label for="filter-slider">Слайдер</label>
-                          </li>
-                          <li>
-                            <input type="checkbox" name="block-of-advantages" 
-                            id="filter-block-of-advantages">
-                            <label for="filter-block-of-advantages">Блок преимуществ</label>
-                          </li>
-                          <li>
-                            <input type="checkbox" name="news" 
-                            id="filter-news" checked>
-                            <label for="filter-news">Новости</label>
-                          </li>
-                          <li>
-                            <input type="checkbox" name="gallery" 
-                            id="filter-gallery">
-                            <label for="filter-gallery">Галерея</label>
-                          </li>
-                          <li>
-                            <input type="checkbox" name="basket" 
-                            id="filter-basket">
-                            <label for="filter-basket">Корзина</label>
-                          </li>
-                      </ul>
-                  </fieldset>
-                  <button type="submit">Показать</button>
-              </form>
-          </section>
-
-          <section>
-              <h2>Сортировать</h2>
-              <ul>
-                  <li>
-                      <a href="#">По цене</a>
-                  </li>
-                  <li>
-                      <a>По типу</a>
-                  </li>
-                  <li>
-                      <a>По названию</a>
-                  </li>
-              </ul>
-              <button type="button">&#11015;</button>
-              <button type="button" disabled>&#11014;</button>
-              <!-- тут видимо нужен пагинатор -->
-              <ul>
-                  <li>
-                        <div>
-                            <div class="circle"></div>
-                            <div class="circle"></div>
-                            <div class="circle"></div>
-                        </div>
-                        <img src="img/templates/img-sedona 1.jpg" width="359" height="578" alt="Сайт">
-                      
-                        <h3><a href="blank.html">Sedona</a></h3>
-
-                        <p>Информационный сайт для туристов</p>
-
-                        <p>9 900 &#8381;</p>
-                  </li>
-                  <li>
-                    <div>
-                      <div class="circle"></div>
-                      <div class="circle"></div>
-                      <div class="circle"></div>
-                  </div>
-                      <img src="img/templates/img-pink 1.jpg" width="359" height="578" alt="Сайт">
-
-                      <h3><a href="blank.html">Sedona</a></h3>
-
-                      <p>Информационный сайт для туристов</p>
-
-                      <p>9 900 &#8381;</p>
-                  </li>
-                  <li>
-                    <div>
-                      <div class="circle"></div>
-                      <div class="circle"></div>
-                      <div class="circle"></div>
-                  </div>
-                      <img src="img/templates/img-barbershop 1.jpg" width="359" height="578" alt="Сайт">
-
-                      <h3><a href="blank.html">Sedona</a></h3>
-
-                      <p>Информационный сайтдля туристов</p>
-
-                      <p>9 900 &#8381;</p>
-                  </li>
-                  <li>
-                    <div>
-                      <div class="circle"></div>
-                      <div class="circle"></div>
-                      <div class="circle"></div>
-                  </div>
-                      <img src="img/templates/img-mishka 1.jpg" width="359" height="578" alt="Сайт">
-
-                      <h3><a href="blank.html">Sedona</a></h3>
-
-                      <p>Информационный сайтдля туристов</p>
-
-                      <p>9 900 &#8381;</p>
-                  </li>
-                  <li>
-                    <div>
-                      <div class="circle"></div>
-                      <div class="circle"></div>
-                      <div class="circle"></div>
-                  </div>
-                      <img src="img/templates/img-aplus 1.jpg" width="359" height="578" alt="Сайт">
-
-                      <h3><a href="blank.html">Sedona</a></h3>
-
-                      <p>Информационный сайтдля туристов</p>
-
-                      <p>9 900 &#8381;</p>
-                  </li>
-                  <li>
-                    <div>
-                      <div class="circle"></div>
-                      <div class="circle"></div>
-                      <div class="circle"></div>
-                  </div>
-                      <img src="img/templates/img-kvast 1.jpg" width="359" height="578" alt="Сайт">
-
-                      <h3><a href="blank.html">Sedona</a></h3>
-
-                      <p>Информационный сайтдля туристов</p>
-
-                      <p>9 900 &#8381;</p>
-                  </li>
-              </ul>
-              <ul>
-                <li>
-                  <a>1</a>
-                </li>
-                <li>
-                  <a href="#">2</a>
-                </li>
-                <li>
-                  <a href="#">3</a>
-                </li>
-              </ul>
-              <button type="button">Следующая</button>
-          </section>
-      </main>
-
-      <footer>
-        <section>
-          <h2>Как до нас добраться</h2>
-            <address>
-                <h3>Контактная информация</h3>
-                <p>
-                  Nerds design studio<br>
-                  191186, Санкт-Петербург,<br>
-                  ул. Б. Конюшенная, д. 19/8<br>
-                
-                    <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-                </p> 
-                <a href="blank.html">Напишите нам</a>
-            </address>
-            <div>
-              <img src="img/map-marker 1.png" width="231" height="190" alt="Маркер на карте">
-            </div>
-        </section>
-  
-        <section>
-          <ul>
-            <li>
-              <a href="#">
-                <img src="img/icons/vk-icon.svg" width="26.01" height="15" alt="Логотип Вконтакте">
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="img/icons/fb-icon.svg" width="12" height="22" alt="Логотип Facebook">
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="img/icons/insta-icon.svg" width="21" height="21" alt="Логотип Instagram">
-              </a>
-            </li>
-          </ul>
-        </section>
-        <h2>Давайте дружить, это выгодно!</h2>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
-      </footer>
-
-  </body>
 </html>
