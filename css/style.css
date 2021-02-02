@@ -1,0 +1,360 @@
+/* Fonts */
+
+@font-face{
+  font-family: "Roboto";
+  src: url("../fonts/roboto.woff2") format("woff2"),
+    url("../fonts/roboto.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face{
+  font-family: "Roboto";
+  src: url("../fonts/robotomedium.woff2") format("woff2"),
+    url("../fonts/robotomedium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face{
+  font-family: "Roboto";
+  src: url("../fonts/robotobold.woff2") format("woff2"),
+    url("../fonts/robotobold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Variables */
+
+:root{
+
+  /* Text */
+  --basic-black: #000000;
+  --basic-dark: #283136;
+  --basic-light-dark: #444444;
+  --basic-extra-light: #666666;
+  --basic-white: #FFFFFF;
+
+  --hover-text-green: #01A25E;
+
+  /* Backgrounds */
+
+  --basic-grey: #EEEEEE;
+  /* --main-grey: #888888; */
+  --basic-red: #FB565A;
+  --basic-green: #00CA74;
+  --basic-gold: #EFC849;
+  --extra-dark: #4D4D4D;
+
+  --special-light: #E1E1E1;
+
+  --hover-red: #E74246;
+  --hover-extra-red: #D7373B;
+  --hover-green: #00BC6C;
+  --hover-extra-green: #00AA62;
+  --hover-gold: #EAB534;
+  --hover-extra-gold: #E5A722;
+  --hover-grey: #DFDFDF;
+  --hover-extra-grey: #D5D5D5;
+
+  /* Stroke */
+
+  --special-stroke-light: #DBDBDB;
+
+}
+
+.page-body{
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--basic-black);
+}
+
+a{text-decoration: none;}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+/* ------- Main-header ------- */
+
+/* Navigation */
+
+.main-header{
+  background-color: var(--basic-grey);
+}
+
+.main-navigation{
+  line-height: 30px;
+}
+
+.site-navigation{
+  list-style: none;
+}
+
+.main-navigation a,
+.site-navigation a{
+  color:var(--basic-black);
+}
+
+.main-navigation a:hover,
+.site-navigation a:hover{
+  color: var(--basic-red);
+}
+
+.main-navigation a:focus,
+.main-navigation a:focus{
+  color:inherit;
+  opacity: 0.3;
+}
+
+
+/* Gallery & Info */
+
+.gallery{
+  background-color: var(--basic-red);
+}
+
+.site-info{
+  line-height: 24px;
+}
+
+.site-info .first-slogan{
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: inherit;
+}
+
+.site-info p{
+  color: var(--basic-dark);
+}
+
+.button{
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  border:none;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.info-link{
+  background-color: var(--basic-red);
+}
+
+.info-link:hover{
+  background-color: var(--hover-red);
+}
+
+.info-link:focus{
+  background-color: var(--hover-extra-red);
+  color:rgba(100%, 100%, 100%, 0.3);
+}
+
+/* ------- Content ------- */
+
+/* Features */
+
+.features-list{
+  list-style: none;
+}
+
+.feature-item{
+  line-height: 24px;
+  color: var(--basic-dark);
+}
+
+.feature-item h3{
+  font-size: 24px;
+  line-height: 30px;
+  color: inherit;
+}
+
+.red{
+  background-color: var(--basic-red);
+}
+
+.green{
+  background-color: var(--basic-green);
+}
+
+.gold{
+  background-color: var(--basic-gold);
+}
+
+.red:hover{
+  background-color: var(--hover-red);
+}
+
+.green:hover{
+  background-color: var(--hover-green);
+}
+
+.gold:hover{
+  background-color: var(--hover-gold);
+}
+
+.red:focus{
+  background-color: var(--hover-extra-red);
+  color:rgba(100%, 100%, 100%, 0.3);
+}
+
+.green:focus{
+  background-color: var(--hover-extra-green);
+  color:rgba(100%, 100%, 100%, 0.3);
+}
+
+.gold:focus{
+  background-color: var(--hover-extra-gold);
+  color:rgba(100%, 100%, 100%, 0.3);
+}
+
+/* Description */
+
+.description-block{
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color:var(--basic-dark);
+}
+
+.description-block h3{
+  font-weight: 700;
+}
+
+.description-section .description-slogan{
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color:var(--basic-black);
+}
+
+.description-list{
+  list-style: none;
+}
+
+.details-logo{
+  background-color: var(--basic-green);
+}
+
+.details-list{
+  list-style: none;
+}
+
+.details-item{
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.details-item span{
+  font-size:45px;
+  line-height: 64px;
+  font-weight:700;
+  color: var(--basic-black);
+}
+
+/* Partners */
+
+.partners-list{
+  list-style:none;
+}
+
+.partners-item a{
+  opacity: 0.2;
+}
+
+.partners-item a:hover{
+  opacity: 1;
+}
+
+.partners-item a:focus{
+  opacity: 0.1;
+}
+
+/* ----- Main-footer ----- */
+
+/* Contacts */
+
+.footer-contacts p.footer-title{
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.footer-contacts p{
+  line-height: 18px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.footer-phone{
+  color: inherit;
+}
+
+.footer-contacts a{
+  font-weight: 500;
+}
+
+.feedback-button{
+  background-color: var(--basic-red);
+}
+
+.feedback-button:hover{
+  background-color: var(--hover-red);
+}
+
+.feedback-button:focus{
+  background-color: var(--hover-extra-red);
+  color:rgba(100%, 100%, 100%, 0.3);
+}
+
+/* Social button */
+
+.footer-social ul{
+  list-style:none;
+}
+
+.social-text h2{
+  font-size:36px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.social-text p{
+  color: var(--basic-light-dark);
+  font-size:16px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.vk{
+  background-image: url("../img/icons/vk-icon.svg");
+}
+
+.fb{
+  background-image: url("../img/icons/fb-icon.svg");
+}
+
+.inst{
+  background-image: url("../img/icons/insta-icon.svg");
+}
+
+.social-button{
+  background:var(--special-light);
+  border-radius: 50%;
+}
+
+.social-button:hover{
+  background-color: var(--hover-red);
+}
+
+.social-button:focus{
+  background-color: var(--hover-extra-red);
+}
