@@ -72,7 +72,7 @@
 
 a{text-decoration: none;}
 
-.image{
+img{
   max-width: 100%;
   height: auto;
 }
@@ -82,7 +82,7 @@ a{text-decoration: none;}
   color: var(--basic-dark);
 }
 
-.list{
+ul{
   list-style: none;
 }
 
@@ -92,10 +92,6 @@ a{text-decoration: none;}
 
 .bold{
   font-weight: 700;
-}
-
-.active{
-
 }
 
 /* ------- Main-header ------- */
@@ -110,17 +106,15 @@ a{text-decoration: none;}
   line-height: 30px;
 }
 
-.main-navigation .link,
-.site-navigation .link{
+.link{
   color:var(--basic-black);
 }
 
-.main-navigation .link:hover,
-.site-navigation .link:hover{
+.link:hover:hover{
   color: var(--basic-red);
 }
 
-.main-navigation .link:focus{
+.link:focus{
   color:inherit;
   opacity: 0.3;
 }
@@ -132,7 +126,7 @@ a{text-decoration: none;}
   background-color: var(--basic-red);
 }
 
-.site-info .first-slogan{
+.first-slogan{
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -221,7 +215,7 @@ a{text-decoration: none;}
   color: var(--basic-dark);
 }
 
-.description-section .description-slogan{
+.description-slogan{
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
@@ -274,19 +268,6 @@ a{text-decoration: none;}
 
 .footer-phone{
   color: inherit;
-}
-
-.feedback-button{
-  background-color: var(--basic-red);
-}
-
-.feedback-button:hover{
-  background-color: var(--hover-red);
-}
-
-.feedback-button:focus{
-  background-color: var(--hover-extra-red);
-  color:rgba(100%, 100%, 100%, 0.3);
 }
 
 /* Social button */
