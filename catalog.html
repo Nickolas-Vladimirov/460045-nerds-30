@@ -4,50 +4,51 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Нёрдс</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-  <header>
-    <nav>
-      <a href="index.html">
-        <img src="img/nerds-logo.png" width="159,87" height="65,02" alt="Логотип Нёрдс">
+<body class="page-body">
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo link" href="index.html">
+        <img src="img/nerds-logo.svg" width="159,87" height="65,02" alt="Логотип Нёрдс">
       </a>
-      <ul>
-        <li><a href="blank.html">Студия</a></li>
-        <li><a href="blank.html">Клиенты</a></li>
-        <li><a>Магазин</a></li>
-        <li><a href="blank.html">Контакты</a></li>
+      <ul class="site-navigation">
+        <li><a class="link" href="blank.html">Студия</a></li>
+        <li><a class="link" href="blank.html">Клиенты</a></li>
+        <li><a class="link active" href="catalog.html">Магазин</a></li>
+        <li><a class="link" href="blank.html">Контакты</a></li>
       </ul>
-      <a href="blank.html">
-        <img src="img/cart-icon.svg" width="15" height="15" alt="">
-        Корзина</a>
+      <a class="login-link link" href="blank.html">Корзина</a>
     </nav>
-
-    <h1>Магазин готовых товаров</h1>
+    <h1 class="navigation-title title">Магазин готовых шаблонов</h1>
 
   </header>
 
-  <main>
-    <h2>Стоимость</h2>
-    <p>
-      <input type="range" min="0" max="15000" step="1" value="10000">
-    </p>
-    <p>От <span>0</span> До <span>15000</span></p>
+  <main class="container">
+    <h2 class="catalog-categories title bold">Стоимость</h2>
 
-    <section>
+    <div class="price-counter">
+      <input class="input-price" type="range" min="0" max="15000" step="1" value="10000">
+    </div>
+
+    <p class="price-text">От <span class="price-counter">0</span> До <span class="price-counter">15000</span></p>
+
+    <section class="catalog">
       <h2>Фильтр товаров</h2>
-      <form action="https://echo.htmlacademy.ru/" method="get">
+      <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset>
-          <legend>Сетка:</legend>
+          <legend class="catalog-categories title bold">Сетка:</legend>
           <ul>
-            <li>
+            <li class="catalog-option">
               <input type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
               <label for="filter-adaptive">Адаптивная</label>
             </li>
-            <li>
+            <li class="catalog-option">
               <input type="radio" name="grid" value="fixed" id="filter-fixed">
               <label for="filter-fixed">Фиксированная</label>
-            </li>
+            </li class="catalog-option">
             <li>
               <input type="radio" name="grid" value="rubber" id="filter-rubber">
               <label for="filter-rubber">Резиновая</label>
@@ -55,66 +56,67 @@
           </ul>
         </fieldset>
         <fieldset>
-          <legend>Особенности:</legend>
+          <legend class="catalog-categories title bold">Особенности:</legend>
           <ul>
-            <li>
+            <li class="catalog-option">
               <input type="checkbox" name="slider" id="filter-slider" checked>
               <label for="filter-slider">Слайдер</label>
             </li>
-            <li>
+            <li class="catalog-option">
               <input type="checkbox" name="block-of-advantages" id="filter-block-of-advantages">
               <label for="filter-block-of-advantages">Блок преимуществ</label>
             </li>
-            <li>
+            <li class="catalog-option">
               <input type="checkbox" name="news" id="filter-news" checked>
               <label for="filter-news">Новости</label>
             </li>
-            <li>
+            <li class="catalog-option">
               <input type="checkbox" name="gallery" id="filter-gallery">
               <label for="filter-gallery">Галерея</label>
             </li>
-            <li>
+            <li class="catalog-option">
               <input type="checkbox" name="basket" id="filter-basket">
               <label for="filter-basket">Корзина</label>
             </li>
           </ul>
         </fieldset>
-        <button type="submit">Показать</button>
+        <button class="button catalog-button" type="submit">Показать</button>
       </form>
     </section>
 
-    <section>
-      <h2>Сортировать</h2>
+    <section class="templates">
+      <h2 class="catalog-categories title">Сортировать:</h2>
       <ul>
-        <li>
-          <a href="#">По цене</a>
+        <li class="sort">
+          <a class="sort-link active" href="#">По цене</a>
         </li>
-        <li>
-          <a>По типу</a>
+        <li class="sort">
+          <a class="sort-link">По типу</a>
         </li>
-        <li>
-          <a>По названию</a>
+        <li class="sort">
+          <a class="sort-link">По названию</a>
         </li>
       </ul>
-      <button type="button">&#11015;</button>
-      <button type="button" disabled>&#11014;</button>
-      <!-- тут видимо нужен пагинатор -->
+      <button class="button-up" type="button">&#11015;</button>
+      <button class="button-down" type="button" disabled>&#11014;</button>
       <ul>
-        <li>
-          <div>
+        <li class="template">
+          <div class="circle-wrapper">
             <div class="circle"></div>
             <div class="circle"></div>
             <div class="circle"></div>
           </div>
           <img src="img/templates/img-sedona 1.jpg" width="359" height="578" alt="Сайт">
 
-          <h3><a href="blank.html">Sedona</a></h3>
-
-          <p>Информационный сайт для туристов</p>
-
-          <p>9 900 &#8381;</p>
+          <div class="description-wrapper">
+            <h3 class="catalog-categories bold ">
+              <a class="catalog-link" href="blank.html">Sedona</a>
+            </h3>
+            <p class="catalog-text">Информационный сайт для туристов</p>
+            <a href="#" class="button red button-template">9 900 &#8381;</a>
+          </div>
         </li>
-        <li>
+        <li class="template">
           <div>
             <div class="circle"></div>
             <div class="circle"></div>
@@ -122,13 +124,15 @@
           </div>
           <img src="img/templates/img-pink 1.jpg" width="359" height="578" alt="Сайт">
 
-          <h3><a href="blank.html">Sedona</a></h3>
-
-          <p>Информационный сайт для туристов</p>
-
-          <p>9 900 &#8381;</p>
+          <div class="description-wrapper">
+            <h3 class="catalog-categories bold ">
+              <a class="catalog-link" href="blank.html">Sedona</a>
+            </h3>
+            <p class="catalog-text">Информационный сайт для туристов</p>
+            <a href="#" class="button red button-template">9 900 &#8381;</a>
+          </div>
         </li>
-        <li>
+        <li class="template">
           <div>
             <div class="circle"></div>
             <div class="circle"></div>
@@ -136,13 +140,15 @@
           </div>
           <img src="img/templates/img-barbershop 1.jpg" width="359" height="578" alt="Сайт">
 
-          <h3><a href="blank.html">Sedona</a></h3>
-
-          <p>Информационный сайтдля туристов</p>
-
-          <p>9 900 &#8381;</p>
+          <div class="description-wrapper">
+            <h3 class="catalog-categories bold ">
+              <a class="catalog-link" href="blank.html">Sedona</a>
+            </h3>
+            <p class="catalog-text">Информационный сайт для туристов</p>
+            <a href="#" class="button red button-template">9 900 &#8381;</a>
+          </div>
         </li>
-        <li>
+        <li class="template">
           <div>
             <div class="circle"></div>
             <div class="circle"></div>
@@ -150,13 +156,15 @@
           </div>
           <img src="img/templates/img-mishka 1.jpg" width="359" height="578" alt="Сайт">
 
-          <h3><a href="blank.html">Sedona</a></h3>
-
-          <p>Информационный сайтдля туристов</p>
-
-          <p>9 900 &#8381;</p>
+          <div class="description-wrapper">
+            <h3 class="catalog-categories bold ">
+              <a class="catalog-link" href="blank.html">Sedona</a>
+            </h3>
+            <p class="catalog-text">Информационный сайт для туристов</p>
+            <a href="#" class="button red button-template">9 900 &#8381;</a>
+          </div>
         </li>
-        <li>
+        <li class="template">
           <div>
             <div class="circle"></div>
             <div class="circle"></div>
@@ -164,13 +172,15 @@
           </div>
           <img src="img/templates/img-aplus 1.jpg" width="359" height="578" alt="Сайт">
 
-          <h3><a href="blank.html">Sedona</a></h3>
-
-          <p>Информационный сайтдля туристов</p>
-
-          <p>9 900 &#8381;</p>
+          <div class="description-wrapper">
+            <h3 class="catalog-categories bold ">
+              <a class="catalog-link" href="blank.html">Sedona</a>
+            </h3>
+            <p class="catalog-text">Информационный сайт для туристов</p>
+            <a href="#" class="button red button-template">9 900 &#8381;</a>
+          </div>
         </li>
-        <li>
+        <li class="template">
           <div>
             <div class="circle"></div>
             <div class="circle"></div>
@@ -178,70 +188,73 @@
           </div>
           <img src="img/templates/img-kvast 1.jpg" width="359" height="578" alt="Сайт">
 
-          <h3><a href="blank.html">Sedona</a></h3>
-
-          <p>Информационный сайтдля туристов</p>
-
-          <p>9 900 &#8381;</p>
+          <div class="description-wrapper">
+            <h3 class="catalog-categories bold ">
+              <a class="catalog-link" href="blank.html">Sedona</a>
+            </h3>
+            <p class="catalog-text">Информационный сайт для туристов</p>
+            <a href="#" class="button red button-template">9 900 &#8381;</a>
+          </div>
         </li>
       </ul>
-      <ul>
-        <li>
-          <a>1</a>
+      <ul class="paginator">
+        <li class="paginator-item">
+          <a class="paginator-button paginator-active" href="#">1</a>
         </li>
-        <li>
-          <a href="#">2</a>
+        <li class="paginator-item">
+          <a class="paginator-button" href="#">2</a>
         </li>
-        <li>
-          <a href="#">3</a>
+        <li class="paginator-item">
+          <a class="paginator-button" href="#">3</a>
         </li>
       </ul>
-      <button type="button">Следующая</button>
+      <button class="button catalog-button button-next" type="button">Следующая</button>
     </section>
   </main>
 
-  <footer>
-    <section>
+  <footer class="main-footer">
+    <section class="footer-map">
       <h2>Как до нас добраться</h2>
-      <address>
+      <address class="footer-contacts">
         <h3>Контактная информация</h3>
-        <p>
-          Nerds design studio<br>
-          191186, Санкт-Петербург,<br>
-          ул. Б. Конюшенная, д. 19/8<br>
+        <p class="footer-title bold">NЁRDS DESIGN STUDIO<p>
 
-          <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+        <p class="footer-text">191186, Санкт-Петербург,
+          ул. Б. Конюшенная, д. 19/8</p>
+        <p class="footer-text">
+        <a class="footer-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
         </p>
-        <a href="blank.html">Напишите нам</a>
+        <a class="button red" href="blank.html">Напишите нам</a>
       </address>
-      <div>
+      <div class="map-marker">
         <img src="img/map-marker 1.png" width="231" height="190" alt="Маркер на карте">
       </div>
     </section>
 
-    <section>
+    <section class="footer-social">
       <ul>
         <li>
-          <a href="#">
-            <img src="img/icons/vk-icon.svg" width="26.01" height="15" alt="Логотип Вконтакте">
+          <a href="#" class="social-button vk">
+            <!-- <img src="img/icons/vk-icon.svg" width="26.01" height="15" alt="Логотип Вконтакте"> -->
           </a>
         </li>
         <li>
-          <a href="#">
-            <img src="img/icons/fb-icon.svg" width="12" height="22" alt="Логотип Facebook">
+          <a href="#" class="social-button fb">
+            <!-- <img src="img/icons/fb-icon.svg" width="12" height="22" alt="Логотип Facebook"> -->
           </a>
         </li>
         <li>
-          <a href="#">
-            <img src="img/icons/insta-icon.svg" width="21" height="21" alt="Логотип Instagram">
+          <a href="#" class="social-button inst">
+            <!-- <img src="img/icons/insta-icon.svg" width="21" height="21" alt="Логотип Instagram"> -->
           </a>
         </li>
       </ul>
     </section>
-    <h2>Давайте дружить, это выгодно!</h2>
-    <p>Скидка 10% для друзей из социальных сетей.</p>
+    <div class="social-text">
+      <h2 class="social-title title bold">Давайте дружить, это выгодно!</h2>
+      <p class="text">Скидка 10% для друзей из социальных сетей.</p>
+    </div>
   </footer>
-
 </body>
 
 </html>
