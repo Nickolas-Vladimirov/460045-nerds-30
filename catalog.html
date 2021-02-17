@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -11,23 +11,30 @@
 <body class="page-body">
   <header class="main-header">
     <nav class="main-navigation">
-      <a class="main-header-logo link" href="index.html">
-        <img src="img/nerds-logo.svg" width="159,87" height="65,02" alt="Логотип Нёрдс">
-      </a>
-      <ul class="site-navigation">
-        <li><a class="link" href="blank.html">Студия</a></li>
-        <li><a class="link" href="blank.html">Клиенты</a></li>
-        <li><a class="link active" href="catalog.html">Магазин</a></li>
-        <li><a class="link" href="blank.html">Контакты</a></li>
-      </ul>
-      <a class="login-link link" href="blank.html">Корзина</a>
+
+      <!-- <div class="main-header-bar"> -->
+        <div class="main-navigation-wrapper wrapper">
+          <a class="main-header-logo link" href="index.html">
+            <img src="img/nerds-logo.svg" width="159,87" height="65,02" alt="Логотип Нёрдс">
+          </a>
+          <ul class="site-navigation">
+            <li><a class="link" href="blank.html">Студия</a></li>
+            <li><a class="link" href="blank.html">Клиенты</a></li>
+            <li><a class="link" href="catalog.html">Магазин</a></li>
+            <li><a class="link" href="blank.html">Контакты</a></li>
+          </ul>
+          <a class="login-link link" href="blank.html">Корзина</a>
+        </div>
+      <!-- </div> -->
+
     </nav>
     <h1 class="navigation-title title">Магазин готовых шаблонов</h1>
 
   </header>
 
-  <main class="container">
-    <h2 class="catalog-categories title bold">Стоимость</h2>
+  <main class="page-catalog wrapper">
+    <div class="price">
+      <h2 class="catalog-categories catalog-title title bold">Стоимость</h2>
 
     <div class="price-counter">
       <input class="input-price" type="range" min="0" max="15000" step="1" value="10000">
@@ -35,6 +42,7 @@
 
     <p class="price-text">От <span class="price-counter">0</span> До <span class="price-counter">15000</span></p>
 
+    </div>
     <section class="catalog">
       <h2>Фильтр товаров</h2>
       <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
@@ -85,8 +93,9 @@
     </section>
 
     <section class="templates">
-      <h2 class="catalog-categories title">Сортировать:</h2>
-      <ul>
+      <div class="sort-option">
+        <h2 class="catalog-categories title">Сортировать:</h2>
+      <ul class="sort-list">
         <li class="sort">
           <a class="sort-link active" href="#">По цене</a>
         </li>
@@ -97,19 +106,23 @@
           <a class="sort-link">По названию</a>
         </li>
       </ul>
-      <button class="button-up" type="button">&#11015;</button>
+
+      <div class="">
+        <button class="button-up" type="button">&#11015;</button>
       <button class="button-down" type="button" disabled>&#11014;</button>
-      <ul>
+      </div>
+      </div>
+      <ul class="templates-list">
         <li class="template">
           <div class="circle-wrapper">
             <div class="circle"></div>
             <div class="circle"></div>
             <div class="circle"></div>
           </div>
-          <img src="img/templates/img-sedona 1.jpg" width="359" height="578" alt="Сайт">
+          <img class="template-image" src="img/templates/img-sedona 1.jpg" width="359" height="578" alt="Сайт">
 
           <div class="description-wrapper">
-            <h3 class="catalog-categories bold ">
+            <h3 class="catalog-title catalog-categories bold ">
               <a class="catalog-link" href="blank.html">Sedona</a>
             </h3>
             <p class="catalog-text">Информационный сайт для туристов</p>
@@ -122,10 +135,10 @@
             <div class="circle"></div>
             <div class="circle"></div>
           </div>
-          <img src="img/templates/img-pink 1.jpg" width="359" height="578" alt="Сайт">
+          <img class="template-image" src="img/templates/img-pink 1.jpg" width="359" height="578" alt="Сайт">
 
           <div class="description-wrapper">
-            <h3 class="catalog-categories bold ">
+            <h3 class="catalog-title catalog-categories bold ">
               <a class="catalog-link" href="blank.html">Sedona</a>
             </h3>
             <p class="catalog-text">Информационный сайт для туристов</p>
@@ -138,10 +151,10 @@
             <div class="circle"></div>
             <div class="circle"></div>
           </div>
-          <img src="img/templates/img-barbershop 1.jpg" width="359" height="578" alt="Сайт">
+          <img class="template-image" src="img/templates/img-barbershop 1.jpg" width="359" height="578" alt="Сайт">
 
           <div class="description-wrapper">
-            <h3 class="catalog-categories bold ">
+            <h3 class="catalog-title catalog-categories bold ">
               <a class="catalog-link" href="blank.html">Sedona</a>
             </h3>
             <p class="catalog-text">Информационный сайт для туристов</p>
@@ -154,10 +167,10 @@
             <div class="circle"></div>
             <div class="circle"></div>
           </div>
-          <img src="img/templates/img-mishka 1.jpg" width="359" height="578" alt="Сайт">
+          <img class="template-image" src="img/templates/img-mishka 1.jpg" width="359" height="578" alt="Сайт">
 
           <div class="description-wrapper">
-            <h3 class="catalog-categories bold ">
+            <h3 class="catalog-title catalog-categories bold ">
               <a class="catalog-link" href="blank.html">Sedona</a>
             </h3>
             <p class="catalog-text">Информационный сайт для туристов</p>
@@ -170,10 +183,10 @@
             <div class="circle"></div>
             <div class="circle"></div>
           </div>
-          <img src="img/templates/img-aplus 1.jpg" width="359" height="578" alt="Сайт">
+          <img class="template-image" src="img/templates/img-aplus 1.jpg" width="359" height="578" alt="Сайт">
 
           <div class="description-wrapper">
-            <h3 class="catalog-categories bold ">
+            <h3 class="catalog-title catalog-categories bold ">
               <a class="catalog-link" href="blank.html">Sedona</a>
             </h3>
             <p class="catalog-text">Информационный сайт для туристов</p>
@@ -186,10 +199,10 @@
             <div class="circle"></div>
             <div class="circle"></div>
           </div>
-          <img src="img/templates/img-kvast 1.jpg" width="359" height="578" alt="Сайт">
+          <img class="template-image" src="img/templates/img-kvast 1.jpg" width="359" height="578" alt="Сайт">
 
           <div class="description-wrapper">
-            <h3 class="catalog-categories bold ">
+            <h3 class="catalog-title catalog-categories bold ">
               <a class="catalog-link" href="blank.html">Sedona</a>
             </h3>
             <p class="catalog-text">Информационный сайт для туристов</p>
@@ -197,9 +210,10 @@
           </div>
         </li>
       </ul>
+     <div class="paginator-block">
       <ul class="paginator">
-        <li class="paginator-item">
-          <a class="paginator-button paginator-active" href="#">1</a>
+        <li class="paginator-item paginator-active">
+          <a class="paginator-button" href="#">1</a>
         </li>
         <li class="paginator-item">
           <a class="paginator-button" href="#">2</a>
@@ -209,51 +223,63 @@
         </li>
       </ul>
       <button class="button catalog-button button-next" type="button">Следующая</button>
+     </div>
     </section>
   </main>
 
   <footer class="main-footer">
     <section class="footer-map">
-      <h2>Как до нас добраться</h2>
-      <address class="footer-contacts">
-        <h3>Контактная информация</h3>
-        <p class="footer-title bold">NЁRDS DESIGN STUDIO<p>
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d420.1559353776933!2d30.323266733888232!3d59.93861819228012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1613204973768!5m2!1sru!2sru"
+      width="1160" height="416" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <div class="map-info">
 
-        <p class="footer-text">191186, Санкт-Петербург,
-          ул. Б. Конюшенная, д. 19/8</p>
-        <p class="footer-text">
-        <a class="footer-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-        </p>
-        <a class="button red" href="blank.html">Напишите нам</a>
-      </address>
-      <div class="map-marker">
-        <img src="img/map-marker 1.png" width="231" height="190" alt="Маркер на карте">
+        <h2 class="visability-hidden">Как до нас добраться</h2>
+        <address class="footer-contacts">
+          <h3 class="visability-hidden">Контактная информация</h3>
+          <p class="footer-title bold">NЁRDS DESIGN STUDIO</p>
+
+          <p class="footer-text">
+            191186, Санкт-Петербург,
+            ул. Б. Конюшенная, д. 19/8
+          </p>
+          <p class="footer-text">
+            <a class="footer-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+          </p>
+          <a class="button red feedback-button" href="blank.html">Напишите нам</a>
+        </address>
+
+        <!-- <div class="map-marker">
+          <img src="img/map-marker 1.png" width="231" height="190" alt="Маркер на карте">
+        </div> -->
       </div>
     </section>
 
     <section class="footer-social">
-      <ul>
-        <li>
-          <a href="#" class="social-button vk">
-            <!-- <img src="img/icons/vk-icon.svg" width="26.01" height="15" alt="Логотип Вконтакте"> -->
-          </a>
-        </li>
-        <li>
-          <a href="#" class="social-button fb">
-            <!-- <img src="img/icons/fb-icon.svg" width="12" height="22" alt="Логотип Facebook"> -->
-          </a>
-        </li>
-        <li>
-          <a href="#" class="social-button inst">
-            <!-- <img src="img/icons/insta-icon.svg" width="21" height="21" alt="Логотип Instagram"> -->
-          </a>
-        </li>
-      </ul>
+      <!-- <div class="social-list"> -->
+        <ul class="social-list">
+          <li>
+            <a href="#" class="social-button vk">
+              <img class="social-img" src="img/icons/vk.svg" width="26.01" height="15" alt="Логотип Вконтакте">
+            </a>
+          </li>
+          <li >
+            <a href="#" class="social-button fb">
+              <img class="social-img" src="img/icons/fb.svg" width="12" height="22" alt="Логотип Facebook">
+            </a>
+          </li>
+          <li >
+            <a href="#" class="social-button inst">
+              <img class="social-img" src="img/icons/inst.svg" width="21" height="21" alt="Логотип Instagram">
+            </a>
+          </li>
+        </ul>
+      <!-- </div> -->
+      <div class="social-block">
+        <h2 class="social-title title bold">Давайте дружить, это выгодно!</h2>
+        <p class="social-text text">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
     </section>
-    <div class="social-text">
-      <h2 class="social-title title bold">Давайте дружить, это выгодно!</h2>
-      <p class="text">Скидка 10% для друзей из социальных сетей.</p>
-    </div>
+
   </footer>
 </body>
 
