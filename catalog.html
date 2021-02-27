@@ -20,7 +20,7 @@
           <ul class="site-navigation">
             <li><a class="link" href="blank.html">Студия</a></li>
             <li><a class="link" href="blank.html">Клиенты</a></li>
-            <li><a class="link" href="catalog.html">Магазин</a></li>
+            <li><a class="link nav-active" href="catalog.html">Магазин</a></li>
             <li><a class="link" href="blank.html">Контакты</a></li>
           </ul>
           <a class="login-link link" href="blank.html">Корзина</a>
@@ -34,60 +34,73 @@
 
   <main class="page-catalog wrapper">
 
-
-
     <section class="catalog">
       <h2>Фильтр товаров</h2>
       <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
 
-        <!-- <fieldset>
-          <h2 class="catalog-categories catalog-title title bold">Стоимость</h2>
+        <fieldset class="filter-item">
+          <legend class="catalog-categories title bold">Стоимость:</legend>
+          <div class="range-filter">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar" style="
+                width: 30%;
+                margin-left: 20%;
+                "></div>
+              </div>
+              <div class="toggle toggle-min" tabindex="0" style="left:20%"></div>
+              <div class="toggle toggle-max" tabindex="0" style="left:50%"></div>
+            </div>
+            <div class="price-controls">
+              <label class="min-price">
+                от <input type="number" name="min-price" value="0">
+              </label>
+              <label class="max-price">
+                до <input type="number" name="max-price" value="15000">
+              </label>
+            </div>
+          </div>
+        </fieldset>
 
-        <div class="price-counter">
-          <input class="input-price" type="range" min="0" max="15000" step="1" value="10000">
-        </div>
-
-        <p class="price-text">От <span class="price-counter">0</span> До <span class="price-counter">15000</span></p> -->
-
-        <fieldset>
+        <fieldset class="filter-styles middle">
           <legend class="catalog-categories title bold">Сетка:</legend>
           <ul>
             <li class="catalog-option">
-              <input type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
-              <label for="filter-adaptive">Адаптивная</label>
+              <input class="visually-hidden filter-input-radio" type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
+              <label class="radio-option" for="filter-adaptive">Адаптивная</label>
             </li>
             <li class="catalog-option">
-              <input type="radio" name="grid" value="fixed" id="filter-fixed">
-              <label for="filter-fixed">Фиксированная</label>
+              <input class="visually-hidden filter-input-radio" type="radio" name="grid" value="fixed" id="filter-fixed">
+              <label class="radio-option" for="filter-fixed">Фиксированная</label>
             </li class="catalog-option">
-            <li>
-              <input type="radio" name="grid" value="rubber" id="filter-rubber">
-              <label for="filter-rubber">Резиновая</label>
+            <li class="catalog-option">
+              <input class="visually-hidden filter-input-radio" type="radio" name="grid" value="rubber" id="filter-rubber">
+              <label class="radio-option" for="filter-rubber">Резиновая</label>
             </li>
           </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="filter-styles">
           <legend class="catalog-categories title bold">Особенности:</legend>
           <ul>
             <li class="catalog-option">
-              <input type="checkbox" name="slider" id="filter-slider" checked>
-              <label for="filter-slider">Слайдер</label>
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
+              <label class="checkbox-option" for="filter-slider">Слайдер</label>
             </li>
             <li class="catalog-option">
-              <input type="checkbox" name="block-of-advantages" id="filter-block-of-advantages">
-              <label for="filter-block-of-advantages">Блок преимуществ</label>
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="block-of-advantages" id="filter-block-of-advantages">
+              <label class="checkbox-option" for="filter-block-of-advantages">Блок преимуществ</label>
             </li>
             <li class="catalog-option">
-              <input type="checkbox" name="news" id="filter-news" checked>
-              <label for="filter-news">Новости</label>
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
+              <label class="checkbox-option" for="filter-news">Новости</label>
             </li>
             <li class="catalog-option">
-              <input type="checkbox" name="gallery" id="filter-gallery">
-              <label for="filter-gallery">Галерея</label>
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
+              <label class="checkbox-option" for="filter-gallery">Галерея</label>
             </li>
             <li class="catalog-option">
-              <input type="checkbox" name="basket" id="filter-basket">
-              <label for="filter-basket">Корзина</label>
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="basket" id="filter-basket">
+              <label class="checkbox-option" for="filter-basket">Корзина</label>
             </li>
           </ul>
         </fieldset>
@@ -110,9 +123,9 @@
         </li>
       </ul>
 
-      <div class="">
-        <button class="button-up" type="button">&#11015;</button>
-      <button class="button-down" type="button" disabled>&#11014;</button>
+      <div class="button-block">
+        <a class="button-up" type="button"></a>
+      <a class="button-down" type="button" disabled></a>
       </div>
       </div>
       <ul class="templates-list">
@@ -133,7 +146,7 @@
           </div>
         </li>
         <li class="template">
-          <div>
+          <div class="circle-wrapper">
             <div class="circle"></div>
             <div class="circle"></div>
             <div class="circle"></div>
@@ -149,7 +162,7 @@
           </div>
         </li>
         <li class="template">
-          <div>
+          <div class="circle-wrapper">
             <div class="circle"></div>
             <div class="circle"></div>
             <div class="circle"></div>
@@ -165,7 +178,7 @@
           </div>
         </li>
         <li class="template">
-          <div>
+          <div class="circle-wrapper">
             <div class="circle"></div>
             <div class="circle"></div>
             <div class="circle"></div>
@@ -181,7 +194,7 @@
           </div>
         </li>
         <li class="template">
-          <div>
+          <div class="circle-wrapper">
             <div class="circle"></div>
             <div class="circle"></div>
             <div class="circle"></div>
@@ -197,7 +210,7 @@
           </div>
         </li>
         <li class="template">
-          <div>
+          <div class="circle-wrapper">
             <div class="circle"></div>
             <div class="circle"></div>
             <div class="circle"></div>
