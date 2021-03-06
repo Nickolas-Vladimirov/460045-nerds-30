@@ -521,6 +521,7 @@ p{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: absolute;
 }
 
 .footer-contacts::after{
@@ -717,23 +718,22 @@ p{
   align-items: center;
 }
 
-.button-up{
+.button-filter{
   width: 11px;
   height: 10px;
   background-image: url("../img/catalog-button.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  opacity: 0.2;
 }
 
-.button-down{
-  width: 11px;
-  height: 10px;
-  background-image: url("../img/catalog-button.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+.up{
   transform: rotate(180deg);
   margin-left: 18px;
-  opacity: 0.2;
+}
+
+.button-active{
+  opacity: 1;
 }
 
 /* Range filter */
@@ -950,6 +950,10 @@ p{
   border: 3px solid var(--special-stroke-light);
 }
 
+.paginator-button{
+  color: inherit;
+}
+
 /* ------------------------------------------- */
 
 /* Social button */
@@ -957,7 +961,7 @@ p{
 .footer-social{
   display: grid;
   grid-template-columns: 1fr 2fr;
-  margin-top: 100px;
+  margin-top: 416px;
 }
 
 .social-title{
