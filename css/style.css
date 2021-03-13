@@ -1011,6 +1011,7 @@ p{
 }
 
 .modal-feedback{
+  display: none;
   margin: 0 auto;
   width: 760px;
   height: 443px;
