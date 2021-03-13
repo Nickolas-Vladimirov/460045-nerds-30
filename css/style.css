@@ -1009,3 +1009,64 @@ p{
 .social-button:focus > .social-img{
   opacity: 0.3;
 }
+
+.modal-feedback{
+  margin: 0 auto;
+  width: 760px;
+  height: 443px;
+  background-color: var(--basic-white);
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+  padding: 63px 100px 84px 100px;
+  position: absolute;
+  top: 2330px;
+  left: 450px;
+  z-index: 1;
+}
+
+.feedback-title{
+  font-size: 45px;
+  line-height: 52.73px;
+}
+
+.login-feedback{
+  margin-top: 37px;
+  margin-bottom: 34px;
+  display: flex;
+}
+
+.feedback-label{
+  line-height: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-label:first-child{
+  margin-right: 40px;
+}
+
+.login-text{
+  margin-bottom: 9px;
+}
+
+.area{
+  background-color: var(--basic-white);
+  padding: 16px 17px 16px 14px;
+  border: 2px solid #D7DCDF;
+  border-radius: 3px;
+}
+
+.login-area{
+  width: 325px;
+}
+.login-button{
+  margin-top: 47px;
+  padding: 17px 83px 15px 83px;
+}
+
+.button-exit{
+  border: none;
+  background: transparent;
+  position: absolute;
+  top: 100px;
+  right: 80px;
+}
