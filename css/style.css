@@ -65,7 +65,7 @@
   overflow-x: hidden;
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: var(--basic-black);
@@ -1017,7 +1017,7 @@ p{
   height: 443px;
   background-color: var(--basic-white);
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
-  padding: 63px 100px 84px 100px;
+  padding: 43px 100px 114px 100px;
   position: fixed;
   bottom: 180px;
   left: 450px;
@@ -1056,18 +1056,75 @@ p{
   border-radius: 3px;
 }
 
+.letter-area{
+  padding-bottom: 70px;
+}
+
 .login-area{
   width: 325px;
 }
 .login-button{
-  margin-top: 47px;
+  margin-top: 27px;
   padding: 17px 83px 15px 83px;
 }
 
-.button-exit{
+.modal-show{
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error{
+  animation: snake 0.6s;
+}
+
+.button-close{
   border: none;
   background: transparent;
   position: absolute;
-  top: 100px;
+  top: 85px;
   right: 80px;
+}
+
+/* Animation */
+
+@keyframes bounce{
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90%{
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+
+}
+
+@keyframes snake{
+  0%,
+  100%{
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90%{
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+
 }
