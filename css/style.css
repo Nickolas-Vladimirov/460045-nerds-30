@@ -69,7 +69,6 @@
   font-size: 16px;
   font-weight: 400;
   color: var(--basic-black);
-
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
@@ -154,8 +153,6 @@ p{
 .main-navigation{
   line-height: 30px;
 }
-
-
 
 .wrapper{
   width: 1160px;
@@ -263,6 +260,8 @@ p{
   background-color: var(--hover-extra-red);
   color:rgba(100%, 100%, 100%, 0.3);
 }
+
+
 
 /* ------- Content ------- */
 
@@ -818,9 +817,7 @@ p{
   line-height: inherit;
 }
 
-
 /* Templates */
-
 
 .templates{
   grid-row: 1/3;
@@ -954,8 +951,6 @@ p{
   color: inherit;
 }
 
-/* ------------------------------------------- */
-
 /* Social button */
 
 .footer-social{
@@ -996,7 +991,6 @@ p{
   justify-content: center;
   align-items: center;
   margin-left: 9px;
-
 }
 
 .social-button:hover{
@@ -1006,6 +1000,7 @@ p{
 .social-button:focus{
   background-color: var(--hover-extra-red);
 }
+
 .social-button:focus > .social-img{
   opacity: 0.3;
 }
@@ -1063,6 +1058,7 @@ p{
 .login-area{
   width: 325px;
 }
+
 .login-button{
   margin-top: 27px;
   padding: 17px 83px 15px 83px;
