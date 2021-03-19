@@ -261,6 +261,76 @@ p{
   color:rgba(100%, 100%, 100%, 0.3);
 }
 
+.gallery{
+  position: relative;
+  width: 760px;
+  height: 431px;
+}
+
+.gallery-list{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-item{
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.slide-current{
+  display: block;
+}
+
+.first-gallery-screen{
+  background-image: url("../img/nerds-index-slide1.png");
+}
+
+.second-gallery-screen{
+  background-image: url("../img/nerds-index-slide1.png");
+}
+
+.third-gallery-screen{
+  background-image: url("../img/nerds-index-slide1.png");
+}
+
+.gallery-controls{
+  position: absolute;
+    bottom: 93px;
+    left: 140px;
+    z-index: 20;
+    display: flex;
+    width: 90px;
+  justify-content: space-between;
+}
+
+.control{
+  position: relative;
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  background-color: transparent;
+  background-color: var(--basic-white);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.current::before{
+  content: "";
+  position: absolute;
+  top: 5.5px;
+  left: 5px;
+  padding: 0;
+  width: 4px;
+  height: 4px;
+  background-color: transparent;
+  border: 2px solid #C1C1C1;
+  border-radius: 50%;
+}
+
 /* ------- Content ------- */
 
 /* Features */
@@ -527,7 +597,7 @@ p{
   height:190px;
   left:523px;
   position:absolute;
-  background-image: url("../img/map-marker\ 1.png");
+  background-image: url("../img/map-marker.png");
 }
 
 .footer-text{
